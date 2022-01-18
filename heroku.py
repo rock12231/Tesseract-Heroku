@@ -12,7 +12,7 @@ from pydantic import BaseModel
 
 
 def read_img(img):
- pytesseract.pytesseract.tesseract_cmd = ‘/app/.apt/usr/bin/tesseract’
+ pytesseract.pytesseract.tesseract_cmd = "/app/.apt/usr/bin/tesseract"
  text = pytesseract.image_to_string(img)
  return(text)
 
