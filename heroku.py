@@ -24,7 +24,7 @@ class ImageType(BaseModel):
  url: str
 
 
-@app.post(“/ predict /”)
+@app.post("/predict/")
 def prediction(request: Request,
                file: bytes = File(…)):
 
