@@ -1,4 +1,6 @@
 ###########pythoncode.py###############
+from email.policy import default
+from typing import Any
 import numpy as np
 import sys
 import os
@@ -12,28 +14,26 @@ from pydantic import BaseModel
 
 
 def read_img(img):
- pytesseract.pytesseract.tesseract_cmd = "/app/.apt/usr/bin/tesseract"
- text = pytesseract.image_to_string(img)
- return(text)
+    pytesseract.pytesseract.tesseract_cmd = "/app/.apt/usr/bin/tesseract"
+    text = pytesseract.image_to_string(img)
+    return(text)
 
 
 app = FastAPI()
 
 
 class ImageType(BaseModel):
- url: str
+    url: str
 
 
 @app.post("/predict/")
-def prediction(request: Request,
-               file: bytes = File(…)):
-
-
-if request.method == “POST”:
- image_stream = io.BytesIO(file)
- image_stream.seek(0)
- file_bytes = np.asarray(bytearray(image_stream.read()), dtype=np.uint8)
- frame = cv2.imdecode(file_bytes, cv2.IMREAD_COLOR)
- label = read_img(frame)
- return label
- return “No post request found”
+def prediction(request: Request, file: bytes = File(default=Any)):
+    
+    if request.method == "POST":
+        image_stream = io.BytesIO(file)
+        image_stream.seek(0)
+        file_bytes = np.asarray(bytearray(image_stream.read()), dtype=np.uint8)
+        frame = cv2.imdecode(file_bytes, cv2.IMREAD_COLOR)
+        label = read_img(frame)
+        return label
+    return "No post request found"
