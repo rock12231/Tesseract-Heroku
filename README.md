@@ -28,7 +28,7 @@
               <p>  "What is Pytesseract used for?\n\nPytesseract is a wrapper for Tesseract-OCR Engine.
               It is also useful as a stand-alone\ninvocation script to tesseract, as it can read all image
               types supported by the Pillow and\nLeptonica imaging libraries, including jpeg, png, gif, bmp,
-              tiff, and others. 13-Aug-2021"
+              tiff, and others. 13-Aug-2021\n\f"
               </p>
           </td>
         </tr>
