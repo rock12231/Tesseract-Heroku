@@ -1,6 +1,4 @@
 ###########pythoncode.py###############
-from email.policy import default
-from typing import Any
 import numpy as np
 import sys
 import os
@@ -27,7 +25,7 @@ class ImageType(BaseModel):
 
 
 @app.post("/predict/")
-def prediction(request: Request, file: bytes = File(default=Any)):
+def prediction(request: Request, file: bytes = File(...)):
     
     if request.method == "POST":
         image_stream = io.BytesIO(file)
