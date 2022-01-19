@@ -3,6 +3,9 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/rock12231/Tesseract-Heroku/edit/master/README.md)](https://hits.seeyoufarm.com)                    
 ## Image to Text using python Tesseract heroku
 
+#### Go To 
+[Visit](https://django-tesseract.herokuapp.com/docs)   >>>>  https://django-tesseract.herokuapp.com/docs <<<<
+
 #### Step 1 >>>
 <img src="https://github.com/rock12231/Tesseract-Heroku/blob/master/step1.png" width="400" height="240">
 
