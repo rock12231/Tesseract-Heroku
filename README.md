@@ -1,4 +1,6 @@
 # Tesseract-Heroku
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/rock12231/Tesseract-Heroku/edit/master/README.md)](https://hits.seeyoufarm.com)                    
 ## Image to Text using python Tesseract heroku
 
 #### Step 1 >>>
