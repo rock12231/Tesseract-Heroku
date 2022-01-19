@@ -12,7 +12,7 @@ from pydantic import BaseModel
 
 
 def read_img(img):
-    pytesseract.pytesseract.tesseract_cmd = "/app/.apt/usr/bin/tesseract"
+    pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
     text = pytesseract.image_to_string(img)
     return(text)
 
@@ -24,9 +24,8 @@ class ImageType(BaseModel):
     url: str
 
 
-@app.post("/predict/")
+@app.post('/predict/')
 def prediction(request: Request, file: bytes = File(...)):
-    
     if request.method == "POST":
         image_stream = io.BytesIO(file)
         image_stream.seek(0)
