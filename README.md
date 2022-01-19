@@ -9,7 +9,7 @@
 #### Step 2 >>>
 <img src="https://github.com/rock12231/Tesseract-Heroku/blob/master/step2.png" width="400" height="240">
 
-#### Step 3 >>>
+#### Step 3 & Step 4 >>>
 <img src="https://github.com/rock12231/Tesseract-Heroku/blob/master/step3%20%26%20step4.png" width="400" height="240">
 
 #### Output >>>
